@@ -1,11 +1,10 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
 import ContactForm from "../Components/Formspree"
 
 export default function Navbar() {
 	return (
-		<nav className=''>
+		<nav className='sticky absolute top-0 bg-white z-50'>
 			<nav className='navbar md:max-w-6xl md:m-auto'>
 				<div className='navbar-start'>
 					<div className='dropdown'>
@@ -16,33 +15,36 @@ export default function Navbar() {
 						</div>
 						<ul tabIndex={0} className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
 							<li>
-								<Link to={"/about"}>About</Link>
+								<a href={"#about"}>About</a>
 							</li>
 							<li>
-								<Link to={"/service"}>Service</Link>
+								<a href={"#service"}>Service</a>
 							</li>
 							<li>
-								<Link to={"/skill"}>Skill</Link>
+								<a href={"#skill"}>Skill</a>
 							</li>
 							<li>
-								<Link to={"/portfolio"}>Portfolio</Link>
+								<a href={"#portfolio"}>Portfolio</a>
 							</li>
 						</ul>
 					</div>
-					<Link className='btn btn-ghost text-lg md:text-3xl tracking-wider uppercase text-sky-500 font-normal' to={"/"}>
+					<a className='btn btn-ghost text-lg md:text-3xl tracking-wider uppercase text-sky-500 font-normal' href={"#home"}>
 						imam-mln
-					</Link>
+					</a>
 				</div>
 				<div className='navbar-center hidden lg:flex'>
 					<ul className='menu menu-horizontal px-1 text-xl gap-x-5'>
 						<li>
-							<Link to={"/about"}>About</Link>
+							<a href={"#about"}>About</a>
 						</li>
 						<li>
-							<Link to={"/service"}>Service</Link>
+							<a href={"#service"}>Service</a>
 						</li>
 						<li>
-							<Link to={"/portfolio"}>Portfolio</Link>
+							<a href={"#skill"}>Skill</a>
+						</li>
+						<li>
+							<a href={"#portfolio"}>Portfolio</a>
 						</li>
 					</ul>
 				</div>

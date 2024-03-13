@@ -63,13 +63,13 @@ const datas = {
 		},
 		{
 			title: "UWKS Sosiology",
-			desc: "The solution of stock checking with automation computer vision exatcly object detection",
+			desc: "Logo for the UWKS Sociology Instagram profile of the Faculty of Social and Political Science",
 			img: designSosiologi,
 			link: "https://www.instagram.com/p/CueDTz_xPlz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
 		},
 		{
 			title: "Super Ooze",
-			desc: "The solution of stock checking with automation computer vision exatcly object detection",
+			desc: "Water Superhero Mascot Design for a competition organized by PDAM Surya Sembada",
 			img: designSuperOoze,
 			link: "https://www.instagram.com/p/CcsKQp-P6Sg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
 		},

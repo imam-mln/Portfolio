@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import {HashRouter as Router, Routes, Route} from "react-router-dom"
 
 import Navbar from "./Components/Navbar"
 
@@ -7,19 +7,20 @@ import About from "./Pages/About"
 import Service from "./Pages/Service"
 import Skill from "./Components/Skill"
 import Portfolio from "./Pages/Portfolio"
+import Footer from "./Components/Footer"
 
 function App() {
 	return (
-		<Router>
+		<>
 			<Navbar />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/service' element={<Service />} />
-				<Route path='/skill' element={<Skill />} />
-				<Route path='/portfolio' element={<Portfolio />} />
-			</Routes>
-		</Router>
+			<Home id='home' />
+			<About id='about' />
+			<Service id='service' />
+			<Skill id='skill' />
+			<div className='divider max-w-xs md:max-w-6xl mx-auto'></div>
+			<Portfolio id='portfolio' />
+			<Footer />
+		</>
 	)
 }
 

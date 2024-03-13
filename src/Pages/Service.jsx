@@ -5,7 +5,7 @@ import DataService from "../Datas/Service"
 export default function Service() {
 	return (
 		<>
-			<section className='bg-sky-500 min-h-screen py-14'>
+			<section id='service' className='bg-sky-500 min-h-screen py-14 scroll-mt-12'>
 				<div className='text-center pb-7'>
 					<h1 className='text-2xl text-white md:text-5xl'>My Services</h1>
 					<h2 className='pt-1 md:pt-3 m-auto text-sm md:text-lg text-white text-center'>
@@ -36,9 +36,6 @@ export default function Service() {
 						})}
 					</div>
 				</div>
-			</section>
-			<section>
-				<div></div>
 			</section>
 		</>
 	)

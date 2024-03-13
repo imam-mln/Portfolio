@@ -6,10 +6,11 @@ import {FiGithub} from "react-icons/fi"
 
 import ContactForm from "../Components/Formspree"
 import imamPhoto from "../assets/imam.png"
+import imamPhotoV2 from "../assets/imam-v2.png"
 
 export default function Home() {
 	return (
-		<section className='tracking-wider'>
+		<section id='home' className='tracking-wider scroll-mt-20'>
 			<div className='hidden md:block hero mx-auto max-w-6xl min-w-6xl'>
 				<div className='hero-content flex-col lg:flex-row-reverse md:mb-0 md:pb-0 m-auto lg:gap-40'>
 					<img src={imamPhoto} className=' md:block md:min-w-96' />
@@ -63,7 +64,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='md:hidden hero min-h-screen min-w-80' style={{backgroundImage: "url(src/assets/imam-v2.png)"}}>
+			<div className='md:hidden hero min-h-screen min-w-80' style={{backgroundImage: `url(${imamPhotoV2})`}}>
 				<div className='hero-overlay bg-opacity-40'></div>
 				<div className='hero-content text-center'>
 					<div className='max-w-md text-white'>
